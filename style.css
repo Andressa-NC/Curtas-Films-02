@@ -1,0 +1,50 @@
+body {
+    color: white;
+    background: black;
+    margin: 7px;
+}
+
+header {
+    border-bottom: solid 2px rgb(42, 122, 228);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
+}
+
+section {
+    background: black;
+    color: white;
+    border-bottom: solid 2px rgb(24, 122, 228);
+    padding-bottom: 40px; /* Reduzido para aumentar o espaço entre seções */
+    padding-top: 40px; /* Reduzido para aumentar o espaço entre seções */
+    justify-content: center;
+}
+
+img {
+    height: 250px; /* Aumentado para ampliar a imagem */
+    display: block; /* Para que o título fique centralizado em relação à imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    transition: transform 0.3s ease; /* Suaviza a transformação */
+}
+
+img:hover {
+    transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+}
+
+.categoria-curtasdeRomance,
+.categoria-curtasdrama,
+.Categoria-curtaFantasiaeAnimação {
+    display: flex;
+    flex-direction: column; /* Adicionando coluna para o título embaixo da imagem */
+    overflow-x: auto;
+    gap: 10px; /* Ajustado para espaço entre itens */
+    border-bottom: solid 1px rgb(24, 122, 228); /* Mantém apenas uma linha embaixo */
+}
+
+.categoria-curtasdeRomance a,
+.categoria-curtasdrama a,
+.Categoria-curtaFantasiaeAnimação a {
+    text-align: center; /* Centraliza o texto abaixo da imagem */
+    color: white; /* Mantém o texto em branco */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
