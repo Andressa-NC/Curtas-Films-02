@@ -15,36 +15,60 @@ section {
     background: black;
     color: white;
     border-bottom: solid 2px rgb(24, 122, 228);
-    padding-bottom: 40px; /* Reduzido para aumentar o espaço entre seções */
-    padding-top: 40px; /* Reduzido para aumentar o espaço entre seções */
+    padding-bottom: 40px; 
+    padding-top: 40px; 
     justify-content: center;
 }
 
 img {
-    height: 250px; /* Aumentado para ampliar a imagem */
-    display: block; /* Para que o título fique centralizado em relação à imagem */
-    margin: 0 auto; /* Centraliza a imagem */
-    transition: transform 0.3s ease; /* Suaviza a transformação */
+    height: 250px;
+    display: block; 
+    margin: 0 auto; 
+    transition: transform 0.3s ease;
 }
 
 img:hover {
-    transform: scale(1.1); /* Aumenta a imagem em 10% ao passar o mouse */
+    transform: scale(1.1);
 }
 
-.categoria-curtasdeRomance,
-.categoria-curtasdrama,
-.Categoria-curtaFantasiaeAnimação {
+.categoria-curtas-Romance, {
     display: flex;
-    flex-direction: column; /* Adicionando coluna para o título embaixo da imagem */
+    flex-direction: column; 
     overflow-x: auto;
-    gap: 10px; /* Ajustado para espaço entre itens */
-    border-bottom: solid 1px rgb(24, 122, 228); /* Mantém apenas uma linha embaixo */
+    gap: 10px; 
+    border-bottom: solid 1px rgb(24, 122, 228); 
 }
 
-.categoria-curtasdeRomance a,
-.categoria-curtasdrama a,
-.Categoria-curtaFantasiaeAnimação a {
-    text-align: center; /* Centraliza o texto abaixo da imagem */
-    color: white; /* Mantém o texto em branco */
-    text-decoration: none; /* Remove o sublinhado dos links */
+.categoria-curtas-emoção, {
+    display: flex;
+    flex-direction: column; 
+    overflow-x: auto;
+    gap: 10px; 
+    border-bottom: solid 1px rgb(24, 122, 228); 
+}
+
+.Categoria-curta-Animação {
+    display: flex;
+    flex-direction: column; 
+    overflow-x: auto;
+    gap: 10px; 
+    border-bottom: solid 1px rgb(24, 122, 228); 
+}
+
+.categoria-curtas-Romance {
+    text-align: center; 
+    color: white; 
+    text-decoration: none; 
+}
+
+.categoria-curtas-emoção {
+    text-align: center; 
+    color: white; 
+    text-decoration: none; 
+}
+
+.Categoria-curta-Animação a {
+    text-align: center; 
+    color: white; 
+    text-decoration: none; 
 }
